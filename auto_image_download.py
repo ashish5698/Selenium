@@ -45,7 +45,7 @@ for img in imges:
         f = open(download_path + searchtext.replace(" ", "_") + "/" + str(downloaded_img_count) + "." + img_type,
                  "wb")
         f.write(raw_img)
-        f.close
+        f.close()
         downloaded_img_count += 1
     except Exception as e:
         print("Download failed: {}".format(e))
